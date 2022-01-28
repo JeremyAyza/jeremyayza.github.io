@@ -1,0 +1,604 @@
+
+*{
+    
+    box-sizing: border-box
+    
+}
+
+body{
+    margin: 0;
+    font-family: Inconsolata;
+}
+
+
+
+
+.fa-cart-plus{
+    color: rgb(0, 162, 255)
+}
+/* main?? */
+.main{
+ padding:  0 20px;
+
+}
+/* HEADER */
+.header{
+    position:relative;
+    padding: 0 20px;
+    
+    
+   
+}
+.header__title{
+    color: rgb(236, 11, 11);
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    font-family: 'Bungee Inline', cursive,Arial, Helvetica, sans-serif
+
+    
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+/* ----MENU---- */
+/* se le tiene que dar display none al nav para ignorar su existencia
+en cambio si fuera solo a su nav-menu aun quedaría la caja nav */
+.nav{ 
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(19, 19, 19, 0.911);
+    align-items: center;
+    width: 100%;
+    top:130px;
+    z-index: 9999;
+    left: 0;
+    padding: 5px;
+    
+    
+}
+
+.menu__link{
+    text-decoration: none;
+    background-color: rgb(19, 19, 19);
+    color: #b9b9b9;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 0 5px;
+    text-align: center;
+    
+    
+}
+.menu__link:last-child{
+    color: rgb(6, 91, 202);
+    display: block;
+}
+
+.menu__link:hover{
+    color: #454545;
+    transition: 0.05s;
+    background-color: #ffffffaf;
+
+
+}
+
+
+
+/* ------------ */
+
+.icon-menu{
+    font-size: 1.5em;
+    /* border: 1px solid rgb(0, 26, 255); */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn-cart{
+    
+    padding: 6px 25px;
+    text-decoration: none;
+    color: #454545;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-width: 150px;
+
+}
+.btn-user{
+    color: #454545;
+}
+
+
+.header__input{
+    width: 25%;
+    padding: 6px;
+    color: #454545;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+.header__txt{
+    padding: 10px;
+    
+}
+
+
+
+
+
+/* CSS para Slider */
+
+.container-slider{
+   margin:  15px 0;
+   overflow: hidden;
+   position: relative;
+}
+.slider{
+    display: flex;
+    height: 300px;
+    width: 400%;
+    margin-left: -100%;
+}
+.slider__section{
+    width: 100%;
+    position: relative;
+    
+}
+.slider__img{
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(212, 212, 212, 0.87);
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 1px white;
+    text-align: center;
+    justify-content: center;
+    line-height: 2em;
+    z-index: 999;
+    color: black;
+    
+}
+.slider__btn--left{
+    left: 10px;
+}
+.slider__btn--right{
+    right: 10px;
+}
+.slider__btn:hover{
+    background-color: rgba(39, 209, 5, 0.696);
+    transition: 0.05s;
+}
+/* -------------------------- */
+
+/* texto del slider */
+.slider-content__txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 60%;
+}
+
+.slider__title{
+    font-family: Impact;
+    font-size: 2.1em;
+    color: azure;
+    margin: 0;
+    
+}
+.slider__txt{
+    color: white;
+    justify-content: center;
+    margin: 5px 0;
+    
+}
+
+.shop__btn{
+    color: white;
+    display: block;
+    border: 3px solid rgb(255, 145, 0);   
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+.shop__btn:hover{
+    background-color: rgb(255, 145, 0);
+    transition: 0.05s all;
+}
+/* ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin: 10px;
+    
+}
+.product__title{
+    text-align: center;
+}
+.producto__price{
+    color: rgb(0, 0, 0);
+}
+
+.product{
+    border: 2px solid rgba(165, 165, 165, 0.267);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    
+}
+.product::before{
+    content: "New";
+    color: white;
+    background-color: red;
+    padding: 10px;
+    position: absolute;
+    top: -10px; 
+    right: 10%;
+}
+
+
+.product__img{
+    width: 100%;
+    
+    object-fit:cover;
+    
+}
+
+/* EDITOR */
+.editor{
+    margin: 10px 0;
+}
+
+.editor__item{
+    
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.editor__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.editor__circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px rgb(255, 255, 255) solid;
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    bottom: -200px;
+    right: -200px;
+    padding: 20px;
+    padding-right: 55px;
+    padding-bottom: 65px;
+    
+    overflow:unset;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.editor__item:hover .editor__circle{
+    transform: (1.2);
+    bottom: -200px;
+    right: -200px;
+    right: -50px;
+    bottom: -100px;
+    
+}
+.editor__item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.01;
+    
+}
+.editor__item:hover:before{
+    background: white;
+    opacity: 0.09;
+    transition: 0.2s;
+    
+}
+
+/* Testimonios */
+.container-testimonio{
+    background: rgb(235, 235, 235);
+    text-align: center;
+    padding: 20px 40px;
+    margin: 20px 0;
+}
+.testimonio__date{
+    font-size: 2.2em;
+    font-weight: 500;
+}
+.testimonio__name{
+    font-size: 1.4em;
+    font-weight: 100;
+}
+.testimonio__state{
+    color: orangered;
+    font-size: 1.4em;
+    font-weight: 00;
+}
+.testimonio__txt{
+    color: rgb(160, 160, 160);
+    font-size: 1em;
+    font-weight: 5em;
+    line-height: 1.5em;
+}
+
+/*  TIPS */
+.container-tips{
+    text-align: center;
+    padding: 20px 20px;
+    margin: 10px ;
+    
+    
+}
+.tips__icon{
+    font-size: 2em;
+    color: rgb(160, 160, 160);
+    padding-top: 20px;
+    margin: 0;
+
+}
+.tips__title{
+    padding: 0;
+    /* border: 2px solid black; */
+    margin: 8px;
+    font-weight: 400;
+    
+}
+.tips__txt{
+    font-size: 0.9em;
+    font-weight: 5em;
+    color: rgb(160, 160, 160);
+}
+.container-tips .shop__btn{
+    color: black;
+}
+.tips__item{
+    margin: 10px;
+}
+
+/* Footer */
+.footer{
+    padding: 20px 20px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(160, 160, 160);
+}
+
+.footer__title{
+    
+    color: rgb(216, 216, 216);
+    font-size: 1.2em;
+    border-bottom: dotted 1px rgb(160, 160, 160);
+    padding-bottom: 10px;
+    
+}
+.footer__subtitle{
+    color: rgb(216, 8, 8);
+    padding-top: 10px;
+    line-height: 0em;
+}
+.footer__txt{
+    color: rgb(160, 160, 160);
+    font-size: 0.9em;
+    font-weight: 5em;
+    line-height: 1.5em;
+}
+.footer__link{
+    text-decoration: none;
+    display: block;
+    padding: 2px 4px;
+    color: rgb(160, 160, 160);
+    font-size: 0.9em;
+    line-height: 1.8em;
+    
+}
+.footer__input{
+    background-color: rgb(51, 51, 51);
+    width: 99%;
+    display: block;
+    height: 35px;
+    padding: 10px;
+    border: rgb(149, 149, 149) 1px solid;
+    color: white;
+}
+.footer__copy{
+    text-align: center;
+    color: rgb(160, 160, 160);
+    font-size: 0.9em;
+    font-weight: 5em;
+    line-height: 1.5em;
+    padding: 10px;
+    
+}
+.copy__color{
+    color: rgb(216, 8, 8);
+}
+
+.footer-item i{
+    padding-right: 10px;
+}
+
+
+/* RESPONSIV PARA TABLET */
+@media screen and (min-width:800px) {
+    .main{
+        padding: 0 10%;
+    }
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 10px;
+        
+    }
+}
+
+
+/* RESPONSIV PARA ESCRITORIO */
+@media screen and (min-width:1024px) {
+    .icon-menu{
+        display: none;
+    }
+    .slider{
+        height: 400px;
+    }
+    .nav{
+        visibility: visible;
+        position: static;
+        width: 100%;
+        background: none;
+        display: flex;
+        justify-content: space-around;
+        color: black;
+        
+    }
+    .main{
+        padding: 0 10% ;
+    }
+  
+    .menu__link{
+        color: rgb(73, 73, 73);
+        background:none;
+    }
+    .menu__link:hover{
+        background-color: #acacac;
+        color: white;
+        transition: 0.005s;
+    }
+    
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 5%;
+        
+    }
+    .header__container{
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 10px 0;
+    }
+
+    
+    .header__container:nth-child(2){
+        order: -1;
+        width: 20%;
+    }
+    .header__container:nth-child(3){
+        
+        width: 20%;
+        align-content:space-around;
+    }
+    .header__container:nth-child(1){   
+        width: 50%;
+        
+        
+    }
+
+
+    .header__input{
+        width: 80%;
+    }
+    .btn-user{
+        font-size: 1.3em;
+    padding: 5px;        
+    }
+    .btn-search{
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+  
+
+
+    
+    .header__title{
+        width: 100%;
+        font-size: 4em;
+        margin: 0;
+        border-bottom:  solid 1px rgb(73, 73,73);
+        font-family: 'Bungee Inline', cursive;
+    }
+    .header__txt{
+        width: 100%;
+    }
+    .container-tips{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+
+    .container-editor{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .editor__item{
+        width: 48%;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+
+    }
+    .copy{
+        grid-column-start: span 4;
+    }
+    .container-products{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-gap: 10px;
+        
+    }
+}
