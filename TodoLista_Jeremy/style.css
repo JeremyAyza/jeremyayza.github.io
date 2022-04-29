@@ -1,0 +1,169 @@
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    width: auto;
+    padding: 10px;
+    
+}
+.todo{
+    width: 70%;
+    height: 70%;
+    padding: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.198);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.content{
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    display: none;
+}
+
+.txt1{
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.txt2{
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.title{
+    line-height: 0em;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon{
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.781);
+
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.input{
+    padding: 5px;
+    min-width: 60%;
+    border: 2px rgba(0, 0, 0, 0.644) solid;
+    border-radius: 3px;
+    font-size: 1.4em;
+    margin: 5px 0;
+    
+}
+.lista-tareas{
+
+    min-width: 90%;
+    margin: 5px;
+    background-color: rgba(238, 255, 0, 0.493);
+    padding: 15px;
+    border-radius: 6px;
+   
+    list-style: none;
+    font-size: 1.5em;
+    
+}
+.lista-tareas:empty{
+    display: none;
+}
+
+
+.lista-tareas:empty + .content {
+    display: flex;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+.li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.li span{
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+
+
+.boton-borrar{
+    
+    
+    cursor: pointer;
+    
+}
+.tacho{
+
+    
+    pointer-events: none;
+}
+.checkbox{
+    cursor: pointer;
+
+}
+
+
+.tick {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tick::before {
+    content: '✓';
+    font-size: 20px;
+    display: none;
+}
+/* cuando se añada la clase done se verá */
+.done .tick::before {
+    display: inline;
+}
+
+
+
+.done span{
+    text-decoration: line-through;
+}
+
+.checkbox{
+    display: none;
+}
