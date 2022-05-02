@@ -1,0 +1,163 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+h1 {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+body{
+    
+    background-color: rgb(78, 144, 142);
+    
+}
+.container-app {
+    
+    border: white 3px solid;
+    min-height: 300px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 25%, rgba(45, 253, 154, 1) 100%);
+    padding: 10px 10px 15px 10px;
+
+
+}
+
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    align-content: center;
+    justify-content: space-around;
+    padding: 3px;
+    border: 2px black solid;
+    border-radius: 2px;
+
+
+
+
+
+}
+
+.input {
+    margin: 7px;
+    font-size: 1.1em;
+    border: solid 3px rgba(250, 0, 0, 0);
+    border-radius: 4px;
+
+
+}
+
+.input-nombre {
+
+    min-width: 90%;
+
+}
+
+
+
+
+
+
+.event {
+
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 2px;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 5px;
+
+
+}
+
+.container-day {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: center;
+    text-align: center;
+    
+    
+
+
+}
+.days-numbers{
+    font-size: 1.5em;
+    color: rgb(0, 100, 251);
+    
+}
+
+
+
+
+
+.container-name{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    
+    background-color: white;
+    
+}
+
+.event-name {
+    
+    margin: auto 0 ;
+    
+    min-height: 1em;
+    overflow-wrap: break-word;
+    padding: 5px;
+}
+
+
+
+
+.container-btnDelete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3px 0;
+    
+}
+
+.btnDelete {
+    
+    font-size: em;
+    color: white;
+    background-color: red;
+    border: solid 3px rgba(250, 0, 0, 0);
+    border-radius: 4px;
+}
+
+
+@media only screen and (min-width: 800px) {
+    
+    .todo{
+        display: flex;
+
+        background-color: rgb(78, 144, 142);
+        min-height: 100vh;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-app{
+
+        margin: 10px;
+        max-height: 100%;
+        max-width: 700px;
+
+        
+    }
+}
