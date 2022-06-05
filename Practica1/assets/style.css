@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@100&family=Roboto:ital,wght@0,300;0,900;1,300&display=swap');
+
+
+
+*{
+    
+    font-family: 'Roboto', cursive;
+ 
+}
+
+
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    padding: 15px 15px;
+    background-color: a;
+    
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    border-radius: 3px;
+    background-color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
+    min-height: 420px;
+}
+
+
+.p{
+    text-align: justify;
+
+}
+
+.container-link{
+    
+    padding: 5px;
+    display: flex;
+    font-size: 1.2em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.link{
+    color: rgb(31, 31, 151);
+    font-size: 1em;
+    font-weight: bold;
+    font-style: oblique;
+    
+    
+}
+ 
+
+.title-h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4.5em;
+    border-bottom: 2px solid black;
+    margin: 0 0 5px 0px;
+    
+    text-align: center;
+    /* border: 4px black solid; */
+    background-color: #FAE73B;
+    box-shadow: 0.2px 0.2px 2px 2px rgba(0, 0, 0, 0.415);
+
+
+}
+
+
+
+
+
+/* imagen */
+
+.container-img{
+    max-width: 500px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+
+.container-img-js{
+    max-width: 200px;
+    border: 2px black solid;
+    padding:10px;
+    background-color:aquamarine;
+    
+
+
+}
+.img{
+    width: 100%;
+    object-fit:cover;
+    
+}
+
+
+/* NAV */
+.nav{
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    margin: 2px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    
+    
+}
+
+
+
+.item--nav{
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    
+    
+}
+.item--nav:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+.activo{
+    background-color: rgb(167, 167, 167);
+}
+
+
+
+
+
+
+
+/* footer */
+.footer{
+    margin-top: 3px;
+    border-top: black solid 3px;
+    background-color: #ffe600;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.c{
+    border: 1px solid bla;
+    padding: 5px;
+    justify-content: center;
+    width: 30%;
+    margin: 5px;
+    border-radius: 3px;
+    min-width: 50px;
+}   
+.last{
+    display: block;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration:underline
+}
+
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row{
+    padding: 5px;
+    font-size: 2em;
+    color: white;
+    
+}
+.row a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.list-bibliografia>li{
+    
+    text-decoration: none;
+    font-size: 1.2em;
+    text-decoration:none;
+    
+    padding: 10px;
+
+}
+.biliografia-a{
+    color: rgb(56, 45, 38);
+    padding: 5px;
+    
+
+}
+
+
+
+/* resposive containers */
+@media (min-width: 700px) {
+    .container {
+      width: 70%;
+      margin: 15px auto;
+    }
+  }
